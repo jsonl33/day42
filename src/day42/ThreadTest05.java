@@ -34,7 +34,7 @@ class Thread05 extends Frame implements Runnable {
 			repaint();
 			x += 5;
 			if(x > 380) {
-				x = -380;
+				x = -900;
 			}
 		}
 	}
@@ -44,8 +44,8 @@ class Thread05 extends Frame implements Runnable {
 		Dimension d;
 		d=getSize();
 		g.setColor(Color.ORANGE);
+		g.setFont(new Font("궁서체",Font.BOLD, 24));
 		g.drawString("내일부터 장마가 시작됩니다. 시간당 00mm가 내리니 주의하시길 바랍니다",x,d.height/2);
-		g.setFont(new Font("궁서체",Font.BOLD, 36));
 	}
 	
 }
